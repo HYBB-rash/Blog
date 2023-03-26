@@ -20,6 +20,8 @@ if [ "$remote_hash" != "$local_hash" ]; then
     # 从 GitHub 拉取代码更新
     git pull github master >> $LOG_FILE 2>&1
 
+    npm install >> $LOG_FILE 2>&1
+
     # 执行 hexo generate
     hexo generate >> $LOG_FILE 2>&1
 
