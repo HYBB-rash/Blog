@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ROOT="/Users/hongyong/Projects/Blog"
+ROOT="/home/Herman/myblog/myblog"
 LOG_FILE="$ROOT/logs/update.log"
 
 # 将当前时间戳写入日志文件
