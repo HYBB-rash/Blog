@@ -1,4 +1,4 @@
-appletouchicon: /medias/apple-touch-icon.png #你图片的路径
+appletouchicon: /media/apple-touch-icon.png #你图片的路径
 
 # Sidebar profile
 profile:
