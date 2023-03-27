@@ -103,3 +103,13 @@ theme: inside
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ""
+
+pwa:
+  enable: true
+  manifest:
+    theme_color: "#ffffff"
+    background_color: "#ffffff"
+    display: "standalone"
+    icons:
+      - src: "./avt.jpg"
+        sizes: "720x693"
