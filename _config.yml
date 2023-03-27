@@ -138,6 +138,9 @@ pwa:
         - src: /media/48.jpg
           type: image/jpg
           sizes: 48x48
+        - src: /media/apple-touch-icon.jpg
+          type: image/jpg
+          sizes: 180x180
   serviceWorker:
     path: /sw.js
     preload:

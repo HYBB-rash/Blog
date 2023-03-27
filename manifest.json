@@ -41,6 +41,11 @@
             "src": "/media/48.jpg",
             "sizes": "48x48",
             "type": "image/jpg"
+        },
+        {
+            "src": "/media/apple-touch-icon.jpg",
+            "sizes": "180x180",
+            "type": "image/jpg"
         }
       ],
       "splash_pages": null
