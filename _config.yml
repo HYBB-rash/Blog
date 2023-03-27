@@ -117,9 +117,27 @@ pwa:
       scope: /
       start_url: /index.html
       icons:
-        - src: /avt.jpg
+        - src: /media/512.jpg
           type: image/jpg
           sizes: 512x512
+        - src: /media/192.jpg
+          type: image/jpg
+          sizes: 192x192
+        - src: /media/180.jpg
+          type: image/jpg
+          sizes: 180x180
+        - src: /media/144.jpg
+          type: image/jpg
+          sizes: 144x144
+        - src: /media/128.jpg
+          type: image/jpg
+          sizes: 128x128
+        - src: /media/96.jpg
+          type: image/jpg
+          sizes: 96x96
+        - src: /media/48.jpg
+          type: image/jpg
+          sizes: 48x48
   serviceWorker:
     path: /sw.js
     preload:
