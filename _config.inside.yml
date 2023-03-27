@@ -1,3 +1,5 @@
+appletouchicon: /medias/apple-touch-icon.png #你图片的路径
+
 # Sidebar profile
 profile:
   # 也可以直接设置头像 URL
