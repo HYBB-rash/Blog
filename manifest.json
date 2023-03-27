@@ -1,0 +1,17 @@
+{
+    "name": "HY 碎碎念", 
+    "short_name": "HY 碎碎念", 
+    "theme_color": "#fff", 
+    "background_color": "#49b1f5",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [ 
+        {
+            "src": "/avt.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+      ],
+      "splash_pages": null
+  }

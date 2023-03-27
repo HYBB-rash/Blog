@@ -105,11 +105,36 @@ deploy:
   type: ""
 
 pwa:
-  enable: true
   manifest:
-    theme_color: "#ffffff"
-    background_color: "#ffffff"
-    display: "standalone"
-    icons:
-      - src: "./avt.jpg"
-        sizes: "720x693"
+    path: /manifest.json
+    body:
+      name: HY 碎碎念
+      short_name: 碎碎念
+      theme_color: white
+      background_color: white
+      display: standalone
+      orientation: portrait
+      scope: /
+      start_url: /index.html
+      icons:
+        - src: /avt.jpg
+          type: image/jpg
+          sizes: 512x512
+  serviceWorker:
+    path: /sw.js
+    preload:
+      urls:
+        - /
+      posts: 12
+    opts:
+      networkTimeoutSeconds: 30
+    routes:
+      - pattern: !!js/regexp /hm.baidu.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /www.google-analytics.com/
+        strategy: networkOnly
+      - pattern: !!js/regexp /.*\.(js|css|jpg|jpeg|png|gif)$/
+        strategy: cacheFirst
+      - pattern: !!js/regexp /\//
+        strategy: networkFirst
+  priority: 5
