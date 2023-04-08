@@ -8,6 +8,10 @@ profile:
   # 个性签名
   bio: Awesome.
 
+menu:
+  📖 Blog: https://man-her.tech
+  🤖️ ChatGPT: https://chat.man-her.tech
+
 appearance:
   # Accent color, default '#2a2b33'
   accent_color:
