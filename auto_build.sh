@@ -1,34 +1,17 @@
 #!/bin/bash
 
-ROOT="/home/Herman/myblog/myblog"
-LOG_FILE="$ROOT/logs/update.log"
+# 1. 生成静态文件
+hexo generate
 
-# 将当前时间戳写入日志文件
-echo "[$(date)] Checking for updates..." >> $LOG_FILE
+# 2. 提交当前分支的所有修改
+git add .
+git commit -m "Update site"
 
-cd "$ROOT"
+# 3. 切换到 build 分支并将 public 文件夹复制到该分支
+git checkout build
+git checkout master -- public/
+git add .
+git commit -m "Update build branch"
 
-remote_hash=$(git ls-remote https://github.com/HYBB-rash/Blog.git -h refs/heads/master | awk '{print $1}')
-local_hash=$(git rev-parse HEAD)
-
-echo "[$(date)] Remote hash $remote_hash. Local hash $local_hash." >> $LOG_FILE
-
-if [ "$remote_hash" != "$local_hash" ]; then
-
-    echo "[$(date)] Update found. Pulling changes and generating..." >> $LOG_FILE
-
-    # 从 GitHub 拉取代码更新
-    git pull github master >> $LOG_FILE 2>&1
-
-    npm install >> $LOG_FILE 2>&1
-
-    # 执行 hexo generate
-    hexo generate >> $LOG_FILE 2>&1
-
-    echo "[$(date)] Update and generation completed." >> $LOG_FILE
-else
-    echo "[$(date)] No updates found." >> $LOG_FILE
-fi
-
-echo "[$(date)] .........................................................................................................." >> $LOG_FILE
-
+# 4. 推送到远程仓库
+git push github --all
