@@ -32,9 +32,9 @@ var precacheUrls = [];
 
   precacheUrls.push('/2023/03/27/texgt/');
 
-  precacheUrls.push('/2023/03/27/自动构建脚本/');
-
   precacheUrls.push('/2023/03/28/博客网站搭建总结/');
+
+  precacheUrls.push('/2023/03/27/自动构建脚本/');
 
   precacheUrls.push('/2023/03/27/自动构建脚本2-0/');
 

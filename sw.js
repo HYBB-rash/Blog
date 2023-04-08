@@ -13,6 +13,11 @@ if (workbox) {
   );
 
   workbox.routing.registerRoute(
+    new RegExp("^https?://chat.man-her.tech/?$"),
+    workbox.strategies.networkFirst()
+  );
+
+  workbox.routing.registerRoute(
     new RegExp(".*.html"),
     workbox.strategies.networkFirst()
   );
