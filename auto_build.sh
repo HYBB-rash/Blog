@@ -15,3 +15,5 @@ git commit -m "Update build branch"
 
 # 4. 推送到远程仓库
 git push github --all
+
+git checkout master
