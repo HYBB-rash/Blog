@@ -8,8 +8,8 @@ echo "[$(date)] Checking for updates..." >> $LOG_FILE
 
 cd "$ROOT"
 
-remote_hash=$(git ls-remote https://github.com/HYBB-rash/Blog.git -h refs/heads/master | awk '{print $1}')
-local_hash=$(git rev-parse HEAD)
+remote_hash=$(git ls-remote https://github.com/HYBB-rash/Blog.git -h refs/heads/build | awk '{print $1}')
+local_hash=$(git rev-parse build)
 
 echo "[$(date)] Remote hash $remote_hash. Local hash $local_hash." >> $LOG_FILE
 
