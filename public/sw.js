@@ -24,11 +24,7 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/2023/04/09/hello-world/');
-
   precacheUrls.push('/2023/03/29/macOS的虚拟桌面和窗口管理/');
-
-  precacheUrls.push('/2023/03/27/test/');
 
   precacheUrls.push('/2023/03/27/texgt/');
 
@@ -38,7 +34,11 @@ var precacheUrls = [];
 
   precacheUrls.push('/2023/03/27/自动构建脚本2-0/');
 
+  precacheUrls.push('/2023/03/27/test/');
+
   precacheUrls.push('/2023/04/09/自动构建脚本3-0/');
+
+  precacheUrls.push('/2023/04/09/hello-world/');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":30};

@@ -48,5 +48,12 @@
             "type": "image/jpg"
         }
       ],
-      "splash_pages": null
+      "splash_pages": null,
+      "links": [
+        {
+            "rel": "alternate",
+            "href": "https://chat.man-her.tech",
+            "type": "text/html"
+        }
+      ]
   }
